@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handdown Support</title>
+<style>
+  :root { --bg: #fbfaf7; --text: #1f1e1c; --muted: #6f6a62; --accent: #305eb7; --line: #e6e2da; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #19191b; --text: #ebe9e4; --muted: #a29e97; --accent: #8bb1f7; --line: #2f2f33; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 Georgia, "New York", serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 22px; margin: 36px 0 8px; }
+  h3 { font-size: 18px; margin: 22px 0 4px; }
+  p, li { margin: 0 0 12px; }
+  nav, .meta { font: 14px/1.5 -apple-system, system-ui, sans-serif; color: var(--muted); }
+  nav { margin: 0 0 28px; }
+  a { color: var(--accent); }
+  code { font: 15px Menlo, monospace; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#en">English</a> · <a href="#pt">Português</a> · <a href="privacy.html">Privacy</a></nav>
+
+<section id="en" lang="en">
+<h1>Handdown Support</h1>
+<p>Handdown turns Apple Pencil handwriting into Markdown notes, saved as plain .md files in a folder
+you choose. Write to (contact address coming soon) with questions, bugs or
+ideas. Replies usually within a few days.</p>
+
+<h2>Common questions</h2>
+
+<h3>Where are my notes?</h3>
+<p>In the folder shown in Settings › Sync. The default is <em>iCloud Drive › Handdown</em> (or
+<em>On My iPad › Handdown</em> without iCloud). You can see and copy them in the Files app.</p>
+
+<h3>Can I use a Markdown folder I already have?</h3>
+<p>Yes. Settings › Sync › Change › Choose another folder…, then pick the folder. Handdown reads and
+writes ordinary Markdown and leaves everything else in the folder alone.</p>
+
+<h3>Why is my OneDrive (or Google Drive) folder greyed out?</h3>
+<p>On iPad, some cloud apps, including OneDrive and Google Drive, let other apps open single files
+but not whole folders, so the folder picker shows their folders greyed out. That's decided by the
+cloud app, not by Handdown. For OneDrive, use Settings › Sync › Change › Sign in with Microsoft…:
+Handdown then syncs a OneDrive folder itself. Otherwise keep your notes in iCloud Drive or On My
+iPad.</p>
+
+<h3>Signing in with my work or school account says "Need admin approval".</h3>
+<p>Many organisations only let staff connect apps that their IT department has approved, especially
+apps that can read and write files. That rule is set by your organisation's Microsoft account, not
+by Handdown, and the app can't (and shouldn't) get around it. You can:</p>
+<ul>
+<li>tap <em>Request approval</em> on that page, if it's there: your IT department gets the request,
+and once they approve Handdown it works for everyone in your organisation;</li>
+<li>ask your IT department to approve "Handdown" in Microsoft Entra (Enterprise applications);</li>
+<li>or keep your Handdown notes in a personal OneDrive, iCloud Drive or On My iPad. Personal
+Microsoft accounts never need approval.</li>
+</ul>
+<p>Handdown asks only for permission to read and write your files and to stay signed in. It
+exchanges nothing but your Markdown notes with your OneDrive, and the developer never receives
+them.</p>
+
+<h3>Why doesn't my handwriting show on my other iPad?</h3>
+<p>For privacy, the original ink stays on the iPad you wrote it on. The text (your note) syncs as
+usual; the "What you actually wrote" view is available on the original iPad.</p>
+
+<h3>It misread a word. How do I fix it?</h3>
+<p>Tap the line, then Edit. Handdown remembers the words you correct and gets them right next time.
+"Recognise again" re-reads the ink, for example after adding a language in Settings.</p>
+
+<h3>How do I start a new paragraph, or a new line?</h3>
+<p>Writing: a line you end before the right edge stays its own line; leave a ruled line empty to start
+a new paragraph. Typing: Return for a new line, Return twice for a new paragraph. Dictating: say "new
+line" or "new paragraph".</p>
+
+<h3>How do I nest bullets?</h3>
+<p>Write the dash a little further right (about two letters) than the line above. Typing: put two
+spaces in front of the dash for each level. Or tap a list line and use Indent / Outdent.</p>
+
+<h3>How do I organise notes and folders?</h3>
+<p>In the sidebar, drag a note or a folder onto another folder to move it there, or onto the empty
+space below the list to move it to the top level. A long press also offers Rename… and Move to….</p>
+
+<h3>How do I copy, paste or delete several lines?</h3>
+<p>Tap the check-circle button at the top (or long-press a line › Select lines), tap the lines you
+want (or drag your finger down the circles on the left to pick a run of lines), then Copy, Delete,
+Indent or Outdent. To paste, use the paste button in the writing area, or
+⌘V with a keyboard.</p>
+
+<h3>Which Markdown does it understand from handwriting?</h3>
+<p>At the start of a line: <code>#</code>, <code>##</code>, <code>###</code> headings,
+<code>-</code> lists, <code>1.</code> numbered lists, <code>- [ ]</code> to-dos and
+<code>&gt;</code> quotes. A blank ruled line starts a new paragraph.</p>
+
+<h3>How do I start a new page?</h3>
+<p>With pages on (Settings › Appearance), a new page starts by itself when one is full. To start one
+sooner, choose New page in the note menu at the top, in the <strong>…</strong> menu of the writing
+area (the lines after it move to the new page), or press ⇧⌘↩. In the file it's a line with
+<code>---</code>, which other Markdown apps show as a horizontal line; you can also write or type
+<code>---</code> yourself. It shows as a "New page" line at the end of the page: tap it to edit or
+delete it, which joins the two pages again. <code>***</code> draws a line without starting a page.
+PDFs start each page on a new sheet.</p>
+
+<h3>How do I fix a mistake while I'm writing?</h3>
+<p>Scratch it out: a quick zigzag over a word erases it. You can also double-tap (or squeeze) the
+Apple Pencil for the eraser, as set in your iPad's Pencil settings, or tap the eraser or the undo
+arrow in the writing area. After it's converted, tap the line to edit it.</p>
+
+<h3>Why does my writing join the line above?</h3>
+<p>When a paragraph or a list item (<code>-</code>, <code>1.</code>, <code>- [ ]</code>) doesn't
+end with <code>.</code> <code>!</code> <code>?</code> or <code>:</code>, what you write next
+carries the sentence on, as on paper. A blank line, a heading or
+a list starts something new. To turn this off: Settings › Converting › Carry sentences on.</p>
+
+<h3>Where do I see everything I still have to do?</h3>
+<p>Tap the checklist button at the top right (or press ⇧⌘T). It lists every unticked
+<code>- [ ]</code> to-do and every line with <code>#todo</code>, in all your notes, with the
+heading each is under. Tap one to go there, or tick a to-do right in the list; it stays under
+"Done today" until tomorrow, in case you change your mind. The menu at the top shows one folder's
+tasks only, and you can add a task there (it goes to a "Tasks" note in your Inbox). To-dos inside a
+template aren't listed, and neither are empty ones.</p>
+
+<h3>Does it check spelling?</h3>
+<p>Yes, on your iPad and offline. Words that aren't in any of your handwriting languages get a
+dotted red underline; tap the line for suggestions, or Learn to keep a word (a name, say). Turn it
+off in Settings › Converting › Check spelling.</p>
+
+<h3>Does it show Markdown tables?</h3>
+<p>Yes. Tables in your notes (a header row, a row like <code>| --- | :---: | ---: |</code>, then
+the rows) show as a real table, in reading mode and in PDFs too. Tap a table to edit its Markdown.
+You can type or paste a table; handwriting doesn't make tables.</p>
+
+<h3>Dictation says it needs a download.</h3>
+<p>The first time you dictate in a language, iOS downloads Apple's speech model for it. After that,
+dictation works offline and your voice stays on the iPad.</p>
+
+<h3>I deleted a note by mistake.</h3>
+<p>Deleted notes and folders stay in <em>Recently deleted</em>, at the bottom of the sidebar, for 30
+days. Open it and tap Restore. If the note's folder is gone too, it's made again. For a change inside
+a note, use Undo (top of the screen) right away.</p>
+
+<h3>A note says "(conflict …)".</h3>
+<p>The same note was changed on two devices before they synced. Handdown keeps both versions so
+nothing is lost. Compare them, keep what you want, and delete the other.</p>
+
+<h3>Can I change Handdown's language?</h3>
+<p>Handdown follows your primary handwriting language. In Settings › Handwriting languages, tap
+"Make primary" next to the one you want. There are 18: English, Portuguese (Portugal and Brazil),
+Spanish, French, German, Italian, Dutch, Swedish, Danish, Norwegian, Finnish, Polish, Czech,
+Romanian, Turkish, Indonesian and Malay.</p>
+
+<h2>Trial and purchase</h2>
+
+<h3>How does the free trial work?</h3>
+<p>The first time you turn handwriting into text, dictate or open Tasks, Handdown offers a free 7-day
+trial. After that, the full version is a one-time purchase, with no subscription. The App Store
+keeps the trial with your Apple Account, so it starts once.</p>
+
+<h3>What stays free after the trial?</h3>
+<p>Reading and searching your notes, typing, ticking to-dos in a note, exporting to PDF and backups,
+always. Handwriting into text, dictation and the task list need the full version. Nothing you wrote
+is ever lost: ink that wasn't converted stays on the page.</p>
+
+<h3>I bought it, but it asks again (new iPad, or I reinstalled).</h3>
+<p>Settings › Handdown › Restore purchase, signed in with the same Apple Account you bought it
+with.</p>
+
+<h2>Daily notes, Siri and Spotlight</h2>
+
+<h3>Is there a note for each day?</h3>
+<p>Tap the calendar button at the top of the sidebar (or press ⌘D) for today's note. It's made the
+first time, in a Journal folder, with the date as its title. If you keep templates in a Templates
+folder, hold the New note button to start a note from one; <code>{{date}}</code>,
+<code>{{time}}</code> and <code>{{title}}</code> are filled in.</p>
+
+<h3>Can I use Siri or Shortcuts?</h3>
+<p>Yes: New note, Today's note and Add task are in the Shortcuts app, and Siri knows them ("New note
+in Handdown", "Add a task in Handdown"). Add task works without opening Handdown.</p>
+
+<h3>Can I find notes from the iPad's search?</h3>
+<p>Yes. Swipe down on the Home Screen and type a note's name or a few words from its start. To keep
+notes out of Spotlight: Settings › Help and privacy › Show notes in Spotlight.</p>
+
+<h3>Does it work with Obsidian?</h3>
+<p>Yes. Choose your vault's folder in Settings › Sync › Change. Handdown leaves <code>.obsidian</code>
+alone, understands <code>[[links]]</code>, <code>#tags</code>, callouts, front matter and pasted
+pictures, and follows the vault's Daily notes and Templates settings. Anything it doesn't show is
+kept in the file exactly as it was.</p>
+
+<h3>Can I use two windows, Split View or Slide Over?</h3>
+<p>Yes. With Windowed Apps on (Settings › Multitasking &amp; Gestures), you can open Handdown next to
+another app, float it over one, or open two Handdown windows; a note edited in one updates in the
+other.</p>
+</section>
+
+<hr>
+
+<section id="pt" lang="pt-PT">
+<h1>Apoio do Handdown</h1>
+<p>O Handdown transforma a escrita com o Apple Pencil em notas Markdown, guardadas como simples
+ficheiros .md numa pasta à sua escolha. Escreva para
+(endereço de contacto em breve) com dúvidas, erros ou ideias. A resposta costuma
+chegar em poucos dias.</p>
+
+<h2>Perguntas frequentes</h2>
+
+<h3>Onde estão as minhas notas?</h3>
+<p>Na pasta indicada em Definições › Sincronização. A predefinida é <em>iCloud Drive › Handdown</em>
+(ou <em>No meu iPad › Handdown</em> sem iCloud). Pode vê-las e copiá-las na app Ficheiros.</p>
+
+<h3>Posso usar uma pasta de Markdown que já tenho?</h3>
+<p>Sim. Definições › Sincronização › Alterar › Escolher outra pasta…, e escolha a pasta. O Handdown lê
+e escreve Markdown normal e não mexe no resto da pasta.</p>
+
+<h3>Porque é que a pasta do OneDrive (ou Google Drive) aparece a cinzento?</h3>
+<p>No iPad, algumas apps de nuvem, incluindo o OneDrive e o Google Drive, deixam outras apps abrir
+ficheiros soltos mas não pastas inteiras, por isso o seletor mostra as pastas delas a cinzento. Quem
+decide é a app de nuvem, não o Handdown. Para o OneDrive, use Definições › Sincronização › Alterar ›
+Iniciar sessão com a Microsoft…: o Handdown passa a sincronizar ele próprio uma pasta do OneDrive.
+Caso contrário, guarde as notas no iCloud Drive ou No meu iPad.</p>
+
+<h3>Ao iniciar sessão com a conta do trabalho ou da escola aparece "Precisa de aprovação do administrador".</h3>
+<p>Muitas organizações só deixam ligar apps aprovadas pelo departamento de informática, sobretudo
+apps que leem e escrevem ficheiros. Essa regra é definida na conta Microsoft da sua organização, não
+pelo Handdown, e a app não a pode (nem deve) contornar. Pode:</p>
+<ul>
+<li>tocar em <em>Pedir aprovação</em> nessa página, se existir: o pedido chega ao departamento de
+informática e, depois de aprovado, o Handdown funciona para toda a organização;</li>
+<li>pedir ao departamento de informática que aprove o "Handdown" no Microsoft Entra (Aplicações
+empresariais);</li>
+<li>ou guardar as notas do Handdown num OneDrive pessoal, no iCloud Drive ou No meu iPad. As contas
+Microsoft pessoais nunca precisam de aprovação.</li>
+</ul>
+<p>O Handdown pede apenas permissão para ler e escrever os seus ficheiros e para manter a sessão.
+Só troca as suas notas Markdown com o seu OneDrive, e o programador nunca as recebe.</p>
+
+<h3>Porque é que a minha letra não aparece no outro iPad?</h3>
+<p>Por privacidade, a tinta original fica no iPad onde escreveu. O texto (a nota) sincroniza
+normalmente; a vista "O que escreveu de facto" está disponível no iPad original.</p>
+
+<h3>Leu mal uma palavra. Como corrijo?</h3>
+<p>Toque na linha e depois em Editar. O Handdown lembra-se das palavras que corrige e acerta da
+próxima vez. "Reconhecer de novo" volta a ler a tinta, por exemplo depois de juntar um idioma nas
+Definições.</p>
+
+<h3>Como começo um novo parágrafo, ou uma nova linha?</h3>
+<p>A escrever: uma linha que termina antes da margem direita fica uma linha só; deixe uma linha em
+branco para começar um novo parágrafo. A digitar: Return para nova linha, Return duas vezes para novo
+parágrafo. A ditar: diga "nova linha" ou "novo parágrafo".</p>
+
+<h3>Como faço bullets com vários níveis?</h3>
+<p>Escreva o traço um pouco mais à direita (cerca de duas letras) do que a linha de cima. A digitar:
+dois espaços antes do traço por cada nível. Ou toque numa linha da lista e use Aumentar / Diminuir
+avanço.</p>
+
+<h3>Como organizo notas e pastas?</h3>
+<p>Na barra lateral, arraste uma nota ou uma pasta para outra pasta para a mover para lá, ou para o
+espaço vazio por baixo da lista para a pôr no nível principal. Manter premido também oferece Mudar o
+nome… e Mover para….</p>
+
+<h3>Como copio, colo ou apago várias linhas?</h3>
+<p>Toque no botão com o visto no topo (ou mantenha premida uma linha › Selecionar linhas), toque nas
+linhas que quer (ou arraste o dedo pelos círculos à esquerda para escolher várias seguidas) e escolha Copiar, Apagar ou mudar o avanço. Para colar, use o botão de colar na área
+de escrita, ou ⌘V com teclado.</p>
+
+<h3>Que Markdown percebe na escrita à mão?</h3>
+<p>No início da linha: títulos <code>#</code>, <code>##</code>, <code>###</code>, listas
+<code>-</code>, listas numeradas <code>1.</code>, tarefas <code>- [ ]</code> e citações
+<code>&gt;</code>. Uma linha em branco começa um novo parágrafo.</p>
+
+<h3>Como começo uma página nova?</h3>
+<p>Com as páginas ligadas (Definições › Aspeto), uma página nova começa sozinha quando a anterior
+enche. Para começar uma mais cedo, escolha Nova página no menu da nota, no topo, no menu
+<strong>…</strong> da área de escrita (as linhas a seguir passam para a página nova), ou carregue em
+⇧⌘↩. No ficheiro é uma linha com <code>---</code>, que outras apps de Markdown mostram como uma linha
+horizontal; também pode escrever ou digitar <code>---</code>. Aparece como uma linha "Nova página" no
+fim da página: toque nela para a editar ou apagar, o que volta a juntar as duas páginas.
+<code>***</code> desenha uma linha sem mudar de página. Nos PDF, cada página começa numa folha
+nova.</p>
+
+<h3>Como corrijo um erro enquanto escrevo?</h3>
+<p>Risque-o: um zigue-zague rápido por cima de uma palavra apaga-a. Também pode tocar duas vezes (ou
+apertar) o Apple Pencil para a borracha, conforme as definições do Pencil no iPad, ou tocar na
+borracha ou na seta de anular da área de escrita. Depois de convertida, toque na linha para a
+editar.</p>
+
+<h3>Porque é que a minha escrita se junta à linha de cima?</h3>
+<p>Quando um parágrafo ou um item de lista (<code>-</code>, <code>1.</code>, <code>- [ ]</code>)
+não acaba em <code>.</code> <code>!</code> <code>?</code> ou <code>:</code>, o que escreve a seguir
+continua a frase, como no papel. Uma linha em branco, um
+título ou uma lista começam algo novo. Para desligar: Definições › Conversão › Continuar as
+frases.</p>
+
+<h3>Onde vejo tudo o que ainda tenho por fazer?</h3>
+<p>Toque no botão de lista no canto superior direito (ou carregue em ⇧⌘T). Mostra todas as tarefas
+<code>- [ ]</code> por assinalar e todas as linhas com <code>#todo</code>, em todas as notas, com o
+título da secção onde estão. Toque numa para lá ir, ou assinale a tarefa na própria lista; fica em
+"Feitas hoje" até amanhã, para o caso de mudar de ideias. O menu no topo mostra só as tarefas de uma
+pasta, e pode acrescentar aí uma tarefa (vai para a nota "Tarefas" na Inbox). As tarefas dentro de
+um modelo não aparecem, nem as vazias.</p>
+
+<h3>Verifica a ortografia?</h3>
+<p>Sim, no iPad e sem internet. As palavras que não existem em nenhuma das suas línguas de escrita
+ficam sublinhadas a vermelho; toque na linha para ver sugestões, ou em Aprender para guardar uma
+palavra (um nome, por exemplo). Para desligar: Definições › Conversão › Verificar a ortografia.</p>
+
+<h3>Mostra tabelas em Markdown?</h3>
+<p>Sim. As tabelas das notas (uma linha de cabeçalho, uma linha como
+<code>| --- | :---: | ---: |</code> e depois as linhas) aparecem como tabela a sério, também no modo
+de leitura e nos PDF. Toque numa tabela para editar o Markdown dela. Pode digitar ou colar uma
+tabela; a escrita à mão não faz tabelas.</p>
+
+<h3>O ditado diz que precisa de uma transferência.</h3>
+<p>Da primeira vez que dita num idioma, o iOS transfere o modelo de fala da Apple para esse idioma.
+Depois, o ditado funciona sem internet e a sua voz fica no iPad.</p>
+
+<h3>Apaguei uma nota sem querer.</h3>
+<p>As notas e pastas apagadas ficam em <em>Apagados recentemente</em>, no fundo da barra lateral,
+durante 30 dias. Abra e toque em Restaurar. Se a pasta da nota também já não existir, é criada de
+novo. Para uma alteração dentro de uma nota, use Anular (no topo do ecrã) logo a seguir.</p>
+
+<h3>Uma nota diz "(conflito …)".</h3>
+<p>A mesma nota foi alterada em dois dispositivos antes de sincronizarem. O Handdown guarda as duas
+versões para nada se perder. Compare-as, fique com o que quiser e apague a outra.</p>
+
+<h3>Posso mudar o idioma do Handdown?</h3>
+<p>O Handdown segue o seu idioma principal de escrita. Em Definições › Idiomas da escrita à mão, toque
+em "Tornar principal" ao lado do que quer. São 18: inglês, português (Portugal e Brasil), espanhol,
+francês, alemão, italiano, neerlandês, sueco, dinamarquês, norueguês, finlandês, polaco, checo,
+romeno, turco, indonésio e malaio.</p>
+
+<h2>Experiência e compra</h2>
+
+<h3>Como funciona a experiência grátis?</h3>
+<p>Da primeira vez que passa escrita à mão a texto, dita ou abre as Tarefas, o Handdown oferece uma
+experiência grátis de 7 dias. Depois disso, a versão completa é uma compra única, sem subscrição. A
+App Store guarda a experiência com a sua Conta Apple, por isso só começa uma vez.</p>
+
+<h3>O que continua grátis depois da experiência?</h3>
+<p>Ler e pesquisar as notas, escrever no teclado, marcar tarefas dentro de uma nota, exportar para
+PDF e as cópias de segurança, sempre. A escrita à mão em texto, o ditado e a lista de tarefas
+precisam da versão completa. Nada do que escreveu se perde: a tinta por converter fica na página.</p>
+
+<h3>Já comprei, mas pede outra vez (iPad novo, ou reinstalei).</h3>
+<p>Definições › Handdown › Restaurar compra, com a mesma Conta Apple com que comprou.</p>
+
+<h2>Notas do dia, Siri e Spotlight</h2>
+
+<h3>Há uma nota para cada dia?</h3>
+<p>Toque no botão do calendário no topo da barra lateral (ou carregue em ⌘D) para a nota de hoje. É
+criada da primeira vez, numa pasta Diário, com a data como título. Se tiver modelos numa pasta
+Modelos, mantenha premido o botão de nova nota para começar uma a partir de um modelo;
+<code>{{date}}</code>, <code>{{time}}</code> e <code>{{title}}</code> são preenchidos.</p>
+
+<h3>Posso usar a Siri ou os Atalhos?</h3>
+<p>Sim: Nova nota, Nota de hoje e Adicionar tarefa estão na app Atalhos, e a Siri conhece-as ("Nova
+nota no Handdown", "Adicionar uma tarefa no Handdown"). Adicionar tarefa funciona sem abrir o
+Handdown.</p>
+
+<h3>Posso encontrar notas na pesquisa do iPad?</h3>
+<p>Sim. Deslize para baixo no ecrã principal e escreva o nome de uma nota ou umas palavras do início
+dela. Para deixar as notas fora do Spotlight: Definições › Ajuda e privacidade › Mostrar notas no
+Spotlight.</p>
+
+<h3>Funciona com o Obsidian?</h3>
+<p>Sim. Escolha a pasta do seu cofre em Definições › Sincronização › Alterar. O Handdown não mexe em
+<code>.obsidian</code>, percebe <code>[[ligações]]</code>, <code>#etiquetas</code>, destaques, front
+matter e imagens coladas, e segue as definições de Notas diárias e Modelos do cofre. O que não mostra
+fica no ficheiro exatamente como estava.</p>
+
+<h3>Posso usar duas janelas, Split View ou Slide Over?</h3>
+<p>Sim. Com as apps em janelas ativas (Definições › Multitarefa e gestos), pode abrir o Handdown ao
+lado de outra app, pô-lo a flutuar por cima, ou abrir duas janelas do Handdown; uma nota editada numa
+atualiza-se na outra.</p>
+</section>
+</main>
+</body>
+</html>
