@@ -35,7 +35,7 @@ ideas. Replies usually within a few days.</p>
 <h3>Does Handdown work on iPhone and Mac?</h3>
 <p>Yes, from version 1.1, as the same app, free everywhere. Handwriting is on iPad; on iPhone and
 Mac you read your notes and edit them with the keyboard (and dictation). To see the same notes on
-each, choose the same folder in Settings › Sync on all of them: iCloud Drive › Handdown, or a folder
+each, choose the same folder in Settings › Notes and backups › Sync on all of them: iCloud Drive › Handdown, or a folder
 in your OneDrive.</p>
 
 <h3>Can I edit a whole note as Markdown on the Mac?</h3>
@@ -44,17 +44,17 @@ text. ⌘E again shows it formatted. On the Mac the arrow keys also go from line
 a line, and you can drag a line by the handle that appears beside it.</p>
 
 <h3>Where are my notes?</h3>
-<p>In the folder shown in Settings › Sync. The default is <em>iCloud Drive › Handdown</em> (or
+<p>In the folder shown in Settings › Notes and backups › Sync. The default is <em>iCloud Drive › Handdown</em> (or
 <em>On My iPad › Handdown</em> without iCloud). You can see and copy them in the Files app.</p>
 
 <h3>Can I use a Markdown folder I already have?</h3>
-<p>Yes. Settings › Sync › Change › Choose another folder…, then pick the folder. Handdown reads and
+<p>Yes. Settings › Notes and backups › Sync › Change › Choose another folder…, then pick the folder. Handdown reads and
 writes ordinary Markdown and leaves everything else in the folder alone.</p>
 
 <h3>Why is my OneDrive (or Google Drive) folder greyed out?</h3>
 <p>On iPad, some cloud apps, including OneDrive and Google Drive, let other apps open single files
 but not whole folders, so the folder picker shows their folders greyed out. That's decided by the
-cloud app, not by Handdown. For OneDrive, use Settings › Sync › Change › Sign in with Microsoft…:
+cloud app, not by Handdown. For OneDrive, use Settings › Notes and backups › Sync › Change › Sign in with Microsoft…:
 Handdown then syncs a OneDrive folder itself. Otherwise keep your notes in iCloud Drive or On My
 iPad.</p>
 
@@ -123,7 +123,7 @@ arrow in the writing area. After it's converted, tap the line to edit it.</p>
 <p>When a paragraph or a list item (<code>-</code>, <code>1.</code>, <code>- [ ]</code>) doesn't
 end with <code>.</code> <code>!</code> <code>?</code> or <code>:</code>, what you write next
 carries the sentence on, as on paper. A blank line, a heading or
-a list starts something new. To turn this off: Settings › Converting › Carry sentences on.</p>
+a list starts something new. To turn this off: Settings › Writing › Converting › Carry sentences on.</p>
 
 <h3>Where do I see everything I still have to do?</h3>
 <p>Tap the checklist button at the top right (or press ⇧⌘T). It lists every unticked
@@ -131,12 +131,20 @@ a list starts something new. To turn this off: Settings › Converting › Carry
 heading each is under. Tap one to go there, or tick a to-do right in the list; it stays under
 "Done today" until tomorrow, in case you change your mind. The menu at the top shows one folder's
 tasks only, and you can add a task there (it goes to a "Tasks" note in your Inbox). To-dos inside a
-template aren't listed, and neither are empty ones.</p>
+template aren't listed, and neither are empty ones. What's indented under a task comes with it,
+in the same order, and its to-dos can be ticked there too. The book button beside Done shows the
+list full screen, in reading mode: nothing but your tasks, which you can still tick.</p>
+
+<h3>How do I highlight words?</h3>
+<p>On iPad, tap the highlighter at the top of the note and pass Apple Pencil over the words; pass
+over them again to take the highlight off. Anywhere, when you edit a line, select the words and tap
+the highlighter button (beside B, I and S). In the file it's Markdown's <code>==highlight==</code>;
+choose its colour in Settings › Colours.</p>
 
 <h3>Does it check spelling?</h3>
 <p>Yes, on your iPad and offline. Words that aren't in any of your handwriting languages get a
 dotted red underline; tap the line for suggestions, or Learn to keep a word (a name, say). Turn it
-off in Settings › Converting › Check spelling.</p>
+off in Settings › Writing › Converting › Check spelling.</p>
 
 <h3>Does it show Markdown tables?</h3>
 <p>Yes. Tables in your notes (a header row, a row like <code>| --- | :---: | ---: |</code>, then
@@ -157,7 +165,7 @@ a note, use Undo (top of the screen) right away.</p>
 nothing is lost. Compare them, keep what you want, and delete the other.</p>
 
 <h3>Can I change Handdown's language?</h3>
-<p>Handdown follows your primary handwriting language. In Settings › Handwriting languages, tap
+<p>Handdown follows your primary handwriting language. In Settings › Writing › Handwriting languages, tap
 "Make primary" next to the one you want. There are 18: English, Portuguese (Portugal and Brazil),
 Spanish, French, German, Italian, Dutch, Swedish, Danish, Norwegian, Finnish, Polish, Czech,
 Romanian, Turkish, Indonesian and Malay.</p>
@@ -177,10 +185,10 @@ in Handdown", "Add a task in Handdown"). Add task works without opening Handdown
 <h3>Can I find notes from the system's search?</h3>
 <p>Yes. Swipe down on the Home Screen (on a Mac, press ⌘-Space) and type a note's name or a few words
 from its start. To keep
-notes out of Spotlight: Settings › Help and privacy › Show notes in Spotlight.</p>
+notes out of Spotlight: Settings › Notes and backups › Show notes in Spotlight.</p>
 
 <h3>Does it work with Obsidian?</h3>
-<p>Yes. Choose your vault's folder in Settings › Sync › Change. Handdown leaves <code>.obsidian</code>
+<p>Yes. Choose your vault's folder in Settings › Notes and backups › Sync › Change. Handdown leaves <code>.obsidian</code>
 alone, understands <code>[[links]]</code>, <code>#tags</code>, callouts, front matter and pasted
 pictures, and follows the vault's Daily notes and Templates settings. Anything it doesn't show is
 kept in the file exactly as it was.</p>
@@ -206,7 +214,7 @@ chegar em poucos dias.</p>
 <h3>O Handdown funciona no iPhone e no Mac?</h3>
 <p>Sim, a partir da versão 1.1, como a mesma app, grátis em todos. A escrita à mão é no iPad; no
 iPhone e no Mac lê as notas e edita-as com o teclado (e o ditado). Para ver as mesmas notas em todos,
-escolha a mesma pasta em Definições › Sincronização em cada um: iCloud Drive › Handdown, ou uma pasta
+escolha a mesma pasta em Definições › Notas e cópias › Sincronização em cada um: iCloud Drive › Handdown, ou uma pasta
 do seu OneDrive.</p>
 
 <h3>Posso editar uma nota inteira em Markdown no Mac?</h3>
@@ -215,17 +223,17 @@ texto em Markdown. ⌘E de novo mostra-a formatada. No Mac, as setas também and
 Return edita uma linha, e pode arrastar uma linha pela pega que aparece ao lado dela.</p>
 
 <h3>Onde estão as minhas notas?</h3>
-<p>Na pasta indicada em Definições › Sincronização. A predefinida é <em>iCloud Drive › Handdown</em>
+<p>Na pasta indicada em Definições › Notas e cópias › Sincronização. A predefinida é <em>iCloud Drive › Handdown</em>
 (ou <em>No meu iPad › Handdown</em> sem iCloud). Pode vê-las e copiá-las na app Ficheiros.</p>
 
 <h3>Posso usar uma pasta de Markdown que já tenho?</h3>
-<p>Sim. Definições › Sincronização › Alterar › Escolher outra pasta…, e escolha a pasta. O Handdown lê
+<p>Sim. Definições › Notas e cópias › Sincronização › Alterar › Escolher outra pasta…, e escolha a pasta. O Handdown lê
 e escreve Markdown normal e não mexe no resto da pasta.</p>
 
 <h3>Porque é que a pasta do OneDrive (ou Google Drive) aparece a cinzento?</h3>
 <p>No iPad, algumas apps de nuvem, incluindo o OneDrive e o Google Drive, deixam outras apps abrir
 ficheiros soltos mas não pastas inteiras, por isso o seletor mostra as pastas delas a cinzento. Quem
-decide é a app de nuvem, não o Handdown. Para o OneDrive, use Definições › Sincronização › Alterar ›
+decide é a app de nuvem, não o Handdown. Para o OneDrive, use Definições › Notas e cópias › Sincronização › Alterar ›
 Iniciar sessão com a Microsoft…: o Handdown passa a sincronizar ele próprio uma pasta do OneDrive.
 Caso contrário, guarde as notas no iCloud Drive ou No meu iPad.</p>
 
@@ -298,7 +306,7 @@ editar.</p>
 <p>Quando um parágrafo ou um item de lista (<code>-</code>, <code>1.</code>, <code>- [ ]</code>)
 não acaba em <code>.</code> <code>!</code> <code>?</code> ou <code>:</code>, o que escreve a seguir
 continua a frase, como no papel. Uma linha em branco, um
-título ou uma lista começam algo novo. Para desligar: Definições › Conversão › Continuar as
+título ou uma lista começam algo novo. Para desligar: Definições › Escrita › Conversão › Continuar as
 frases.</p>
 
 <h3>Onde vejo tudo o que ainda tenho por fazer?</h3>
@@ -307,12 +315,20 @@ frases.</p>
 título da secção onde estão. Toque numa para lá ir, ou assinale a tarefa na própria lista; fica em
 "Feitas hoje" até amanhã, para o caso de mudar de ideias. O menu no topo mostra só as tarefas de uma
 pasta, e pode acrescentar aí uma tarefa (vai para a nota "Tarefas" na Inbox). As tarefas dentro de
-um modelo não aparecem, nem as vazias.</p>
+um modelo não aparecem, nem as vazias. O que está indentado por baixo de uma tarefa vem com ela,
+pela mesma ordem, e as sub-tarefas também se assinalam aí. O botão do livro, ao lado de OK, mostra a
+lista em ecrã inteiro, no modo de leitura: só as suas tarefas, que pode continuar a assinalar.</p>
+
+<h3>Como realço palavras?</h3>
+<p>No iPad, toque no marcador no topo da nota e passe o Apple Pencil pelas palavras; passe outra vez
+para tirar o realce. Em qualquer aparelho, ao editar uma linha, selecione as palavras e toque no botão
+do marcador (ao lado de B, I e S). No ficheiro fica em Markdown, <code>==realce==</code>; escolha a cor
+em Definições › Cores.</p>
 
 <h3>Verifica a ortografia?</h3>
 <p>Sim, no iPad e sem internet. As palavras que não existem em nenhuma das suas línguas de escrita
 ficam sublinhadas a vermelho; toque na linha para ver sugestões, ou em Aprender para guardar uma
-palavra (um nome, por exemplo). Para desligar: Definições › Conversão › Verificar a ortografia.</p>
+palavra (um nome, por exemplo). Para desligar: Definições › Escrita › Conversão › Verificar a ortografia.</p>
 
 <h3>Mostra tabelas em Markdown?</h3>
 <p>Sim. As tabelas das notas (uma linha de cabeçalho, uma linha como
@@ -334,7 +350,7 @@ novo. Para uma alteração dentro de uma nota, use Anular (no topo do ecrã) log
 versões para nada se perder. Compare-as, fique com o que quiser e apague a outra.</p>
 
 <h3>Posso mudar o idioma do Handdown?</h3>
-<p>O Handdown segue o seu idioma principal de escrita. Em Definições › Idiomas da escrita à mão, toque
+<p>O Handdown segue o seu idioma principal de escrita. Em Definições › Escrita › Idiomas da escrita à mão, toque
 em "Tornar principal" ao lado do que quer. São 18: inglês, português (Portugal e Brasil), espanhol,
 francês, alemão, italiano, neerlandês, sueco, dinamarquês, norueguês, finlandês, polaco, checo,
 romeno, turco, indonésio e malaio.</p>
@@ -354,11 +370,11 @@ Handdown.</p>
 
 <h3>Posso encontrar notas na pesquisa do sistema?</h3>
 <p>Sim. Deslize para baixo no ecrã principal (no Mac, carregue em ⌘-Espaço) e escreva o nome de uma
-nota ou umas palavras do início dela. Para deixar as notas fora do Spotlight: Definições › Ajuda e privacidade › Mostrar notas no
+nota ou umas palavras do início dela. Para deixar as notas fora do Spotlight: Definições › Notas e cópias › Mostrar notas no
 Spotlight.</p>
 
 <h3>Funciona com o Obsidian?</h3>
-<p>Sim. Escolha a pasta do seu cofre em Definições › Sincronização › Alterar. O Handdown não mexe em
+<p>Sim. Escolha a pasta do seu cofre em Definições › Notas e cópias › Sincronização › Alterar. O Handdown não mexe em
 <code>.obsidian</code>, percebe <code>[[ligações]]</code>, <code>#etiquetas</code>, destaques, front
 matter e imagens coladas, e segue as definições de Notas diárias e Modelos do cofre. O que não mostra
 fica no ficheiro exatamente como estava.</p>
